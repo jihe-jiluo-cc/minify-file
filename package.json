@@ -1,0 +1,9 @@
+{
+  "name": "minimize-file",
+  "version": "0.0.1-alpha.0",
+  "description": "minimize files",
+  "main": "dist/index.js",
+  "repository": "git@github.com:dotkiro/minimize-file.git",
+  "author": "Kiro <dotkiro@gmail.com>",
+  "license": "Apache-2.0"
+}
