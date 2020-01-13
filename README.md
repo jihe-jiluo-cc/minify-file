@@ -1,2 +1,2 @@
-# minimize-file
+# minify-file
 minimize files
