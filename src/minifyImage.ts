@@ -94,4 +94,19 @@ const minifyImage = async (file: File, options: BrowserMinifyImageOptions) => {
   return onImageLoad(<Event>imageLoadEvent, options)
 }
 
+type ImageUrl = String
+
+type FileData = File | Blob | Image | ImageUrl
+
+const minify = (fileData: FileData) => {
+  if (fileData instanceof File) {
+    URL.createObjectURL(fileData)
+  } else if (fileData instanceof Blob) {
+    URL.createObjectURL(fileData)
+  } else if (fileData instanceof Image) {
+    fileData.src
+  }
+
+}
+
 export default minifyImage
