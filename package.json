@@ -20,13 +20,39 @@
     "types"
   ],
   "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server",
     "prepublish": "npm run build",
-    "build": "gulp",
-    "lint": "eslint src/*.ts --fix"
+    "build": "webpack",
+    "lint": "eslint --fix src --ext .ts,.tsx"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
     "@commitlint/cli": "^8.3.4",
     "@commitlint/config-angular": "^8.3.4",
-    "husky": "^3.1.0"
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.1.2",
+    "typescript": "^3.7.4",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.3"
   }
 }
