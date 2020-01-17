@@ -9,6 +9,8 @@ const { NODE_ENV } = process.env
 
 module.exports = {
 
+  mode: NODE_ENV === 'production' ? 'production' : 'development',
+
   entry: {
     app: './src/index.ts'
   },
